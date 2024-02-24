@@ -1,0 +1,6 @@
+library(shiny)
+library(shinydashboard)
+library(Rokemon)
+library(tidyverse)
+library(DT)
+library(data.table)

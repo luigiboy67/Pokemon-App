@@ -1,7 +1,7 @@
 source("packages.R")
-
-ui <- shinyUI(dashboardPage(
-  dashboardHeader(),
+source("plots.R")
+ui <- shinyUI(dashboardPage( title = "Pokemon App",
+  dashboardHeader(title = "Pokemon App"),
   dashboardSidebar(disable = TRUE),
   dashboardBody()
 )

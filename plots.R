@@ -1,3 +1,5 @@
+# this file pretty much builds out an plots we'll use
+
 # Team Rocket Theme
 theme_rocket <- ggplot(pokemon,aes(attack,defense))+
   geom_point(col = "grey")+
@@ -54,11 +56,11 @@ legrid <- gridExtra::grid.arrange(grobs=list(p1,p2,p3),ncol=3)
 # display_poke_pal(name = c("hooh"))
 
 # install.packages("extrafont")
-extrafont::font_import() #only run ones
+# extrafont::font_import() #only run ones
 extrafont::loadfonts()
 
 # import fonts this way
-import_pokefont()
+# import_pokefont()
 
 # effective table
 effectiveness <- pokemon %>%

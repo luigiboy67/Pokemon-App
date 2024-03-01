@@ -1,3 +1,4 @@
+# Loads the libraries needed for the app
 library(shiny)
 library(shinydashboard)
 library(Rokemon)

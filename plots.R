@@ -1,3 +1,5 @@
+# this file pretty much builds out an plots we'll use
+
 # Team Rocket Theme
 theme_rocket <- ggplot(pokemon,aes(attack,defense))+
   geom_point(col = "grey")+

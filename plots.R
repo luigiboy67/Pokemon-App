@@ -45,7 +45,7 @@ p3 <- pokemon %>%
   labs(title="Team Instinct",subtitle="Electric Pokemon")
 
 # Puts all graphs together
-legrid <- gridExtra::grid.arrange(grobs=list(p1,p2,p3),ncol=3)
+legrid <- plot_grid(p1,p2,p3, ncol = 3)
 
 #basic usage
 # poke_pie(path_to_sprites = "sprites/sprites/pokemon/1.png",poke = pokemon[1,])

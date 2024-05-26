@@ -4,7 +4,7 @@ source("plots.R")
 
 # shiny app
 ui <- shinyUI(dashboardPage( title = "Pokemon App",
-  dashboardHeader(title = "Pokemon App"),
+  dashboardHeader(title = "Pokemon App", tags$li(class = "dropdown", tags$img(src = "gen-1/6.png"))),
   dashboardSidebar(disable = TRUE),
   dashboardBody(tabsetPanel(
     tabPanel(title = "Team Rocket", 

@@ -1,20 +1,28 @@
-kanto <- pokemon %>%
-  filter(generation == 1)
+pokeset <- read.csv("Pokemon.csv")
 
-johto <- pokemon %>%
-  filter(generation == 2)
+kanto <- pokeset %>%
+  filter(Generation == 1)
 
-hoenn <- pokemon %>%
-  filter(generation == 3)
+johto <- pokeset %>%
+  filter(Generation == 2)
 
-sinnoh <- pokemon %>%
-  filter(generation == 4)
+hoenn <- pokeset %>%
+  filter(Generation == 3)
 
-unova <- pokemon %>%
-  filter(generation == 5)
+sinnoh <- pokeset %>%
+  filter(Generation == 4)
 
-kalos <- pokemon %>%
-  filter(generation == 6)
+unova <- pokeset %>%
+  filter(Generation == 5)
 
-alola <- pokemon %>%
-  filter(generation == 7)
+kalos <- pokeset %>%
+  filter(Generation == 6)
+
+alola <- pokeset %>%
+  filter(Generation == 7)
+
+galar <- pokeset %>%
+  filter(Generation == 8)
+
+paldea <- pokeset %>% 
+  filter(Generation == 9)

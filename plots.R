@@ -1,4 +1,5 @@
 # this file pretty much builds out an plots we'll use
+source("Datasets.R")
 
 # Team Rocket Theme
 theme_rocket <- ggplot(pokemon,aes(attack,defense))+
@@ -79,4 +80,58 @@ effectiveness <- pokemon %>%
 pokemon_types <- ggplot(pokemon,aes(defense,attack))+
   geom_point(aes(col=type1))+
   scale_color_poketype()+
+  theme_bw()
+
+# generation 1
+gen1plot <- ggplot(kanto, aes(Attack,Defense)) + 
+  geom_point(aes(col = Type1)) + 
+  scale_color_hue() + 
+  theme_bw()
+  
+# generation 2
+gen2plot <- ggplot(johto, aes(Attack,Defense)) + 
+  geom_point(aes(col = Type1)) + 
+  scale_color_hue() + 
+  theme_bw()
+
+# generation 3
+gen3plot <- ggplot(hoenn, aes(Attack,Defense)) + 
+  geom_point(aes(col = Type1)) + 
+  scale_color_hue() + 
+  theme_bw()
+
+# generation 4
+gen4plot <- ggplot(sinnoh, aes(Attack,Defense)) + 
+  geom_point(aes(col = Type1)) + 
+  scale_color_hue() + 
+  theme_bw()
+
+# generation 5
+gen5plot <- ggplot(unova, aes(Attack,Defense)) + 
+  geom_point(aes(col = Type1)) + 
+  scale_color_hue() + 
+  theme_bw()
+
+# generation 6
+gen6plot <- ggplot(kalos, aes(Attack,Defense)) + 
+  geom_point(aes(col = Type1)) + 
+  scale_color_hue() + 
+  theme_bw()
+
+# generation 7
+gen7plot <- ggplot(alola, aes(Attack,Defense)) + 
+  geom_point(aes(col = Type1)) + 
+  scale_color_hue() + 
+  theme_bw()
+
+# generation 8
+gen8plot <- ggplot(galar, aes(Attack,Defense)) + 
+  geom_point(aes(col = Type1)) + 
+  scale_color_hue() + 
+  theme_bw()
+
+# generation 9
+gen9plot <- ggplot(paldea, aes(Attack,Defense)) + 
+  geom_point(aes(col = Type1)) + 
+  scale_color_hue() + 
   theme_bw()
